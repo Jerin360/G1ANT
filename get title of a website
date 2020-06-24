@@ -1,0 +1,13 @@
+addon selenium version 4.103.0.0
+addon ocrgoogle version 4.102.0.0
+addon core version 4.106.0.0
+addon language version 4.105.0.0
+selenium.open type chrome url google.com
+window *google* style maximize
+delay 4
+keyboard ‴g1ant home‴⋘ENTER⋙
+delay 4
+mouse.click position 250⫽325
+selenium.gettitle result ♥hul
+selenium.close
+dialog ♥hul
