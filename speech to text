@@ -1,0 +1,10 @@
+addon xlsx version 4.103.0.0
+addon watson version 4.102.0.0
+addon selenium version 4.103.0.0
+addon ocrgoogle version 4.102.0.0
+addon core version 4.106.0.0
+addon language version 4.105.0.0
+♥apiKey = Enter your apikey here
+♥serverUri = https://gateway-lon.watsonplatform.net/speech-to-text/api
+watson.speechtotext C:\Test\speech.mp3 apikey ♥apiKey serveruri ♥serverUri
+dialog ♥result
