@@ -1,0 +1,13 @@
+addon xlsx version 4.103.0.0
+addon core version 4.106.0.0
+addon language version 4.105.0.0
+♥q=1
+♥e=1
+for counter ♥w from 1 to 20 step 1
+xlsx.open path C:\Users\jerin\OneDrive\Desktop\Book1.xlsx
+xlsx.setvalue value ♥w row ♥q colindex ♥e
+♥q=1+♥w
+♥e=1
+xlsx.save
+xlsx.close
+end
