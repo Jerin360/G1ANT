@@ -1,0 +1,21 @@
+addon xlsx version 4.103.0.0
+addon watson version 4.102.0.0
+addon selenium version 4.103.0.0
+addon ocrgoogle version 4.102.0.0
+addon core version 4.106.0.0
+addon language version 4.105.0.0
+♥apiKey = dorxrAkj-O98uIeng9kB7Jt_2q-r5tlRrRF7VtfkBu8M
+♥serverUri = https://gateway.watsonplatform.net/visual-recognition/api/v3/classify?version=2018-03-19
+♥j=1
+♥z=1
+♥q=1
+for counter ♥j from 1 to 2 step 1
+watson.classifyimage imagepath C:\Users\jerin\OneDrive\Pictures\♥q.jpg apikey ♥apiKey serveruri ♥serverUri result ♥y
+♥q=♥q+1
+xlsx.open path C:\Users\jerin\OneDrive\Desktop\book2.xlsx
+xlsx.setvalue value ♥y row ♥z colindex 3
+♥z=♥z+1
+xlsx.save
+xlsx.close
+end
+dialog message ‴Open the book 2 to view the result‴
