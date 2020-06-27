@@ -1,0 +1,17 @@
+addon xlsx version 4.103.0.0
+addon net version 4.103.0.0
+addon core version 4.106.0.0
+addon language version 4.105.0.0
+♥login = ♥credential⟦gmail:login⟧
+♥password = ♥credential⟦gmail:password⟧
+
+mail.imap imap.gmail.com login ♥login password ♥password sincedate ♥date onlyunreadmessages true ignorecertificateerrors true result ♥list 
+♥r=1
+♥c=1
+foreach element ♥element in ♥list
+xlsx.open path path C:\Users\jerin\OneDrive\Desktop\book2.xlsx
+xlsx.setvalue value ♥list row ♥r colindex ♥c
+♥r=♥r+1
+xlsx.save
+xlsx.close
+end
