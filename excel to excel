@@ -1,0 +1,19 @@
+addon xlsx version 4.103.0.0
+addon core version 4.106.0.0
+addon language version 4.105.0.0
+♥datafile1 = ♥environment⟦USERPROFILE⟧\OneDrive\Desktop\book1.xlsx
+♥datafile2 = ♥environment⟦USERPROFILE⟧\OneDrive\Desktop\book2.xlsx
+xlsx.open path ♥datafile1
+xlsx.countrows result ♥s
+xlsx.close
+♥d=2
+♥q=1
+for counter ♥q from 1 to ♥s step 1
+xlsx.open path ♥datafile1
+xlsx.getvalue row ♥q colindex 2 result ♥s
+xlsx.close
+xlsx.open path ♥datafile2
+xlsx.setvalue value ♥s row ♥q colindex 1
+xlsx.close
+end
+dialog message ‴Open Book 2 excel to view the result‴
