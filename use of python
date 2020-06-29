@@ -1,0 +1,11 @@
+program python
+keyboard text ‴print('Let us see addition in Python')‴
+keyboard ⋘ENTER⋙
+keyboard num1=27
+keyboard ⋘ENTER⋙
+keyboard num2=48
+keyboard ⋘ENTER⋙
+keyboard sum=num1+num2
+keyboard ⋘ENTER⋙
+keyboard text ‴print('The sum of {0} and {1} is {2}'.format(num1, num2, sum))‴
+keyboard ⋘ENTER⋙
