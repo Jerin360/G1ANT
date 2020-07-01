@@ -1,0 +1,27 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using G1ANT.Language;
+
+namespace G1ANT.Addon.MyAddon
+{
+    [Addon(Name ="Addon", Tooltip = "This is a demo command")]
+    class message : Command
+    {
+        public message(AbstractScripter scripter) : base(scripter)
+        {
+
+        }
+        public class Arguments : CommandArguments
+        {
+            [Argument(Name = "message", Required = true, Tooltip = "Type some test to be displayed")]
+            public TextStructure message { get; set; } = new TextStructure();
+        }
+        public void Execute(Arguments arguments)
+        {
+            RobotMessageBox.Show(arguments.message.Value);
+        }
+    }
+}
